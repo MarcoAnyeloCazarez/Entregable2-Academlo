@@ -14,7 +14,7 @@ const Weather = () => {
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(success);
         
-    },[])
+    })
 
     const success = pos => {
         latitude = pos.coords.latitude;
@@ -49,7 +49,7 @@ const Weather = () => {
 
                 <div className='descriptionWeather' style={position.wether?.[0].icon}>
                     <section className='imgDescription'>
-                        <img src= {`http://openweathermap.org/img/wn/${position.weather?.[0].icon}@2x.png`} />
+                        <img src= {`http://openweathermap.org/img/wn/${position.weather?.[0].icon}@2x.png` }  alt="imagen que ilustra el estado del tiempo"/>
                     </section>
 
                     <section className='weatherConditions'>
