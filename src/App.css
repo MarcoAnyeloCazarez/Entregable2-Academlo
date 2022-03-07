@@ -1,38 +1,64 @@
-.App {
+body{
+  background-image: url("https://metofficenews.files.wordpress.com/2016/08/vc-northern-hemisphere.png");
+}
+
+.weatherApp{
+  display: flex;
+  justify-content: center;
+  padding-top: 8%;
+  
+}
+
+.cardWeather {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  width: 40%;
+  background-color: gray;
+  opacity: 0.9;
+}
+
+.encabezadoApp h1,h5{
+  text-align: center;
+  color: darkblue;
+}
+
+.descriptionWeather{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.descriptionWeather h3{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imgDescription{
+  width: 50%;
+  padding: 0% 7% 0 0;
+  margin: 0;
+  align-items: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imgDescription img{
+  width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temperature{
+  padding-left: 2rem;
+}
+
+.button{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 1rem;
+}
+
+.button button{
+  background-color: green;
+  border-radius: 5px;
   color: white;
+  height: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
