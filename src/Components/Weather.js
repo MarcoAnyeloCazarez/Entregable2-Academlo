@@ -14,7 +14,7 @@ const Weather = () => {
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(success);
         
-    },[])
+    },[]);
 
     const success = pos => {
         latitude = pos.coords.latitude;
